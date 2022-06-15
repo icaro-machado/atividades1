@@ -8,14 +8,15 @@
 </head>
 <body>
     <h1>TABELAS</h1>
+
+    <!-- Inicio da primeira tabela -->
     <h2>Implicita</h2>
-    <table border="1" width="1000">
+    <table cellpadding="10" cellspacing="10" border="1" width="1000">
         <tr bgcolor="blue">
-            <td width="10%">#ID</td>
-            <td width="30%">Projeto</td>
-            <td width="40%">Titulo</td>
-            <td width="10%">Status</td>
-            <td width="10%">Comentarios</td>
+            <td align="center" width="10%">#ID</td>
+            <td align="center" colspan="2" width="70%">Projeto</td>
+            <td align="center" width="10%">Status</td>
+            <td align="center" width="10%">Comentarios</td>
         </tr>
         <tr>
             <td>1</td>
@@ -36,7 +37,7 @@
             <td>Nome do projeto</td>
             <td>Teste de tabela</td>
             <td>Processando</td>
-            <td>0</td>
+            <td><a href="/htmls/listas.html">Link para listas</a></td>
         </tr>
         <tr>
             <td>1</td>
@@ -53,7 +54,9 @@
             <td>0</td>
         </tr>
     </table>
+    <!-- Fim da primeira tabela -->
 
+    <!-- Inicio da segunda tabela -->
     <h2>Explicita</h2>
     <table border="1" width="1000">
         <thead>
@@ -103,6 +106,7 @@
             </tr>
         </tbody>
     </table>
+    <!-- Fim da segunda tabela -->
 
 </body>
 </html>
