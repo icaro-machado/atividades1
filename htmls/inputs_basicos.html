@@ -7,41 +7,75 @@
     <title>Inputs Basicos</title>
 </head>
 <body>
-    <h1>Inputs Basicos</h1>
 
-    <form action="/htmls/inputs_basicos.html" method="post">
+    <section>    
+        <h1>Inputs Basicos</h1>
+    </section>
 
-        <label>Nome</label> <br>
-        <input type="text" name="nome" class="" id="" /> <br>
+    <hr>
 
-        <label>Senha</label> <br>
-        <input type="password" name="senha" /> <br>
+    <section>
+        <form action="/htmls/inputs_basicos.html" method="post">
 
-        <label>Opcoes</label>
-        <input type="radio" name="opcao" />A
-        <input type="radio" name="opcao" />B
-        <input type="radio" name="opcao" />C
-        <input type="radio" name="opcao" />D
-        <br>
+            <label>Nome</label> <br>
+            <input placeholder="Insira seu nome" type="text" name="nome" class="" id="" /><br><br>
 
-        <label>Multipla Escolha</label>
-        <input type="checkbox" name="multiplo">1
-        <input type="checkbox" name="multiplo">2
-        <input type="checkbox" name="multiplo">3
-        <br>
+            <label>Senha</label> <br>
+            <input placeholder="Insira sua senha" type="password" name="senha" /><br><br>
 
-        <label>Texto</label><br>
-        <textarea name="texto" id="" cols="30" rows="10"></textarea>
+            <label>Time</label><br>
+            <input placeholder="Insira seu time" type="text" name="time" list="lista_times"/>
+            <datalist id="lista_times">
+                <option value="Santos" />
+                <option value="Palmeiras" />
+                <option value="Corinthians" />
+                <option value="Flamengo" />
+            </datalist><br><br>
 
-        <label>Arquivo</label><br>
-        <input type="file" name="arquivo" id="">
+            <label>Opcoes</label>
+            <input type="radio" name="opcao" />A
+            <input type="radio" name="opcao" />B
+            <input type="radio" name="opcao" />C
+            <input type="radio" name="opcao" />D<br><br>
 
-        <label>Sexo</label> <br>
-        <select name="sexo" id="">
-            <option value="">Selecione</option>
-            <option value="Masculino">Masculino</option>
-            <option value="Feminino">Feminino</option>
-        </select>
-    </form>
+            <label>Multipla Escolha</label>
+            <input type="checkbox" name="multiplo">1
+            <input type="checkbox" name="multiplo">2
+            <input type="checkbox" name="multiplo">3<br><br>
+
+            <label>Texto</label><br>
+            <textarea name="texto" id="" cols="30" rows="10"></textarea><br><br>
+
+            <label>Arquivo</label><br>
+            <input type="file" name="arquivo" id=""><br><br>
+
+            <label>Sexo</label> <br>
+            <select name="sexo" id="">
+                <option selected value="">Selecione</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select><br><br>
+
+            <label>Marcas de Carros</label><br>
+            <select name="carro" id="">
+                <option selected value="">Selecione</option>
+
+                <optgroup label="Alemaes">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </optgroup>
+                <optgroup label="Suecos">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                </optgroup>
+            </select><br><br>
+
+            <input type="button" value="Botao sem acao"><br><br>
+
+            <input type="submit" value="Enviar"><br><br>
+
+        </form>
+    </section>
+    
 </body>
 </html>
