@@ -5,51 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <style>        
+        h1, p, section {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Criar seu cadastro</h1>
-    <h2>Veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :)</h2>
-    <p>* campos obrigatórios</p><br>
+    <section>
+        <h1>Criar seu cadastro</h1>
+        <p>Veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :)</p>
+        <p>* campos obrigatórios</p><br>
+    </section>
+    
+    <section>
+        <form action="" method="post">                
+            <label>* Nome completo</label><br>
+            <input type="text" required="" name="nome" id="" /><br><br>
 
-    <form action="" method="post">                
-        <label>Nome completo</label><br>
-        <input type="text" required="" name="nome" id="" /><br><br>
+            <label>* Gênero</label><br>
+            <input type="radio" name="opcao" />Feminino
+            <input type="radio" name="opcao" />Masculino
+            <input type="radio" name="opcao" />Não informar<br><br>
 
-        <label>Gênero</label><br>
-        <input type="radio" name="opcao" />Feminino
-        <input type="radio" name="opcao" />Masculino
-        <input type="radio" name="opcao" />Não informar<br><br>
+            <label>* Data de nascimento</label><br>
+            <label>necessário pra identificar a maioridade, no formato DD/MM/AAAA</label><br>
+            <input type="date" required="" name="data_de_nasc" id="" /><br><br>
 
-        <label>Data de nascimento</label><br>
-        <input type="date" required="" name="data_de_nasc" id="" /><br><br>
+            <label>* CPF</label><br>
+            <input placeholder="___.___.___-__" type="tel" required="" name="cpf" maxlength="11"/><br>
 
-        <label>CPF</label><br>
-        <input placeholder="___.___.___-__" type="tel" required="" name="cpf" maxlength="11"/><br>
+            <a href="">É pessoa jurídica? Conheça a americanas empresas</a><br><br>
 
-        <label>É pessoa jurídica? Conheça a americanas empresas</label><br><br>
+            <label>* Telefone</label><br>
+            <input type="tel" required="" name="telefone" id="" maxlength="11"/><br>
+            <input type="checkbox" name="notif_whatsapp" id="" />
+            <label>receber notificações por whatsapp</label><br><br>
 
-        <label>Telefone</label><br>
-        <input type="tel" required="" name="telefone" id="" maxlength="11"/><br>
-        <input type="checkbox" name="notif_whatsapp" id="" />
-        <label>receber notificações por whatsapp</label><br><br>
+            <label>* E-mail</label><br>
+            <input type="email" required="" name="email" id="" /><br>
+            <input type="checkbox" name="email_promo" id="" />
+            <label>receber e-mails promocionais</label><br><br>
 
-        <label>E-mail</label><br>
-        <input type="email" required="" name="email" id="" /><br>
-        <input type="checkbox" name="email_promo" id="" />
-        <label>receber e-mails promocionais</label><br><br>
+            <label>* Senha</label><br>
+            <input type="password" required="" name="senha" id="" minlength="6" maxlength="20"/><br>
 
-        <label>Senha</label><br>
-        <input type="password" required="" name="senha" id="" minlength="6" maxlength="20"/><br>
+            <input type="checkbox" name="compartilhamento" id="" />
+            <label>compartilhar meus dados com parceiros para ter contúdos personalizados, veja <a href="politica_privacidade.html" target="_blank">como funciona</a></label><br><br>
 
-        <input type="checkbox" name="compartilhamento" id="" />
-        <label>compartilhar meus dados com parceiros para ter contúdos personalizados, veja <a href="https://www.americanas.com.br/hotsite/politica-de-privacidade" target="_blank">como funciona</a></label><br><br>
+            <input type="submit" value="Criar seu cadastro" />
+        </form>
+    </section>
 
-        <input type="submit" value="Criar seu cadastro" />
-    </form>
-
-    <p>Não se preocupe, nosso site é seguro! Ao criar o seu cadastro, você concoda com a nossa <a href="https://www.americanas.com.br/hotsite/politica-de-privacidade">Política de Privacidade</a></p>
-    <p>Já tem cadastro? <a href="https://cliente.americanas.com.br/simple-login/">Entrar</a></p>
-
+    <section>
+        <p>Não se preocupe, nosso site é seguro! Ao criar o seu cadastro, você concoda com a nossa <a href="politica_privacidade.html">Política de Privacidade</a></p>
+        <p>Já tem cadastro? <a href="/htmls/pratica_americanas/login.html">Entrar</a></p>
+    </section>
 
 </body>
 </html>
