@@ -5,13 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <style>        
-        h1, p, section {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="/htmls/pratica_americanas/style.css">
 </head>
 <body>
+    <div id="linha_topo"></div>
     <section>
         <h1>Criar seu cadastro</h1>
         <p>Veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :)</p>
@@ -21,7 +18,7 @@
     <section>
         <form action="" method="post">                
             <label>* Nome completo</label><br>
-            <input type="text" required="" name="nome" id="" /><br><br>
+            <input type="text" required="" name="nome" /><br><br>
 
             <label>* Gênero</label><br>
             <input type="radio" name="opcao" />Feminino
@@ -30,7 +27,7 @@
 
             <label>* Data de nascimento</label><br>
             <label>necessário pra identificar a maioridade, no formato DD/MM/AAAA</label><br>
-            <input type="date" required="" name="data_de_nasc" id="" /><br><br>
+            <input type="date" required="" name="data_de_nasc" /><br><br>
 
             <label>* CPF</label><br>
             <input placeholder="___.___.___-__" type="tel" required="" name="cpf" maxlength="11"/><br>
@@ -38,19 +35,19 @@
             <a href="">É pessoa jurídica? Conheça a americanas empresas</a><br><br>
 
             <label>* Telefone</label><br>
-            <input type="tel" required="" name="telefone" id="" maxlength="11"/><br>
-            <input type="checkbox" name="notif_whatsapp" id="" />
+            <input type="tel" required="" name="telefone" maxlength="11"/><br>
+            <input type="checkbox" name="notif_whatsapp" />
             <label>receber notificações por whatsapp</label><br><br>
 
             <label>* E-mail</label><br>
-            <input type="email" required="" name="email" id="" /><br>
-            <input type="checkbox" name="email_promo" id="" />
+            <input type="email" required="" name="email" /><br>
+            <input type="checkbox" name="email_promo" />
             <label>receber e-mails promocionais</label><br><br>
 
             <label>* Senha</label><br>
-            <input type="password" required="" name="senha" id="" minlength="6" maxlength="20"/><br>
+            <input type="password" required="" name="senha" minlength="6" maxlength="20"/><br>
 
-            <input type="checkbox" name="compartilhamento" id="" />
+            <input type="checkbox" name="compartilhamento" />
             <label>compartilhar meus dados com parceiros para ter contúdos personalizados, veja <a href="politica_privacidade.html" target="_blank">como funciona</a></label><br><br>
 
             <input type="submit" value="Criar seu cadastro" />
